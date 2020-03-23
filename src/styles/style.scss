@@ -1,0 +1,221 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+h1{
+    @include MainTitleTypo;
+    font-size: 90px;
+}
+h2{
+    @include TitleTypo;
+}
+h3{
+    @include MainTitleTypo;
+}
+h4{
+    @include TitleTypo;
+}
+
+body{
+    background-image: url(../../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-attachment: fixed;
+   
+}
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    .ajouter{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: deeppink;
+        border-radius: 100px;
+        height: 60%;
+        padding: 5px 15px;
+        a{
+            text-decoration: none;
+            text-align: center;
+            font-family: $TitleTypo;
+            color: white;
+        }
+        img{
+            height: 20px;
+            margin-left: 6px;
+            color: white;
+        }
+    }
+    .disconnect{
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: $TitleTypo;
+        }
+    }
+}
+.form{
+    background-color: rgb(255, 246, 123);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    form{
+        display: flex;
+        flex-direction: column;
+        input{
+            padding: 10px;
+        }
+        input:nth-child(1){
+            margin-bottom: 10px;
+        }
+    }
+}
+.feed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.recette{
+    margin: 50px;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.678);
+    .description{
+        width: 100%;
+        display: flex;
+        hr{
+            margin: 15px 30px 15px 30px;
+            color: black;
+            
+        }
+        .text{
+            padding: 0px 30px 30px 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .HeaderRecette{
+            width: 600px;
+            .setting{
+                height: 200px;
+                width: 600px;
+                position: absolute;
+                display: flex;
+                justify-content: flex-end;
+                i{
+                    display: none;
+                    margin: 20px 30px;
+                }
+            }
+            .setting:hover{
+                background-image: linear-gradient(to bottom , rgba(0, 0, 0, 0.493), rgba(255, 255, 255, 0));
+                i{
+                    color: White;
+                    display: block;
+                    right: 0px;
+                }
+                
+            }
+            img{
+                width: 600px;
+                min-width: 600px;
+                max-width: 600px;
+            }
+            h2{
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.formulaire{
+    margin: 50px;
+    
+}
+
+.feed{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+.text{
+    display: flex;
+    width: auto;
+    .ingre{
+        width: 100%;
+    }
+}
+.steps{
+    width: 100%;
+    margin: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formulaireAdd{
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    form{
+        width: 1000px;
+    }
+    .addFood{
+        width: 45%;
+        padding: 15px;
+    }
+}
+.firstStep{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.secondStep{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.ingredientsForm , .stepsForm{
+    width: 45%;
+    padding: 15px;
+    font-family: 'Arial';
+
+}
+
+.submitRecette{
+    padding: 15px;
+    margin-top: 30px;
+    background-color: deeppink;
+    border-radius: 100px;
+    border: none;
+    font-family: $TitleTypo;
+    color: white;
+    font-size: 16px;
+}
+.validation{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}

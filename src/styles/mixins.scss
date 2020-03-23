@@ -1,0 +1,13 @@
+@import "variables.scss";
+
+@mixin MainTitleTypo {
+    font-family: $MainTitleTypo;
+    color: $TitleColor;
+}
+@mixin TitleTypo{
+    font-family: $TitleTypo;
+    color: $TitleColor;
+}
+@mixin TextTypo {
+    font-family: $TitleTypo;
+}
